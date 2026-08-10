@@ -1,9 +1,6 @@
-kind: wasmer.io/App.v1
-meta:
-  name: lumios-test
-  owner: candleflamegh
-spec:
-  package:
-    uses: wasmer/static-site
-    cli_args:
-      - "--path=/opt/static_app"
+kind: wasmer.io/App.v0
+name: lumios-test
+owner: candleflamegh
+package: wasmer/static-site
+cli_args:
+  - "--path=/opt/static_app"
