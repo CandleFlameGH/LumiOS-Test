@@ -5,7 +5,7 @@
 	</a>
 	<h3 align="center">Lumi OS</h3>
 	<p align="center">
-		Your new favorite OS.
+		Your new favorite OS, now hosted on Wasmer (Incase your school blocked GitHub.io)
 		<br />
     	<a href="https://lumios.gitbook.io/lumios"><strong>Explore the wiki »</strong></a>
     	<br />
