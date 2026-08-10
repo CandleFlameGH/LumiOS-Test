@@ -3,6 +3,7 @@ meta:
   name: lumios-test
   owner: candleflamegh
 spec:
-  package: wasmer/static-site
-  cli_args:
-    - "--path=/opt/static_app"
+  package:
+    uses: wasmer/static-site
+    cli_args:
+      - "--path=/opt/static_app"
