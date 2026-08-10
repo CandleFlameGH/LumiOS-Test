@@ -16,6 +16,6 @@ jobs:
         uses: wasmerio/setup-wasmer@v1
 
       - name: Deploy to Wasmer
-        run: wasmer deploy --app-name lumios-test --owner candleflamegh
+        run: wasmer deploy
         env:
           WASMER_TOKEN: ${{ secrets.WASMER_TOKEN }}
