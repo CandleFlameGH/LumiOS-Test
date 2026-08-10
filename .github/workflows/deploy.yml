@@ -3,33 +3,18 @@ name: Build and Deploy to Wasmer
 on:
   push:
     branches:
-      - main  # Change to master if your primary branch is called master
+      - main  # or master
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      # Step 1: Check out the repo code
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      # Step 2: Set up Node.js so npm commands work
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      # Step 3: Install packages and build the dist folder
-      - name: Install & Build LumiOS
-        run: |
-          npm install
-          npm run build
-
-      # Step 4: Install Wasmer CLI on the GitHub runner
       - name: Setup Wasmer CLI
         uses: wasmerio/setup-wasmer@v1
 
-      # Step 5: Publish the built app to Wasmer Edge
       - name: Deploy to Wasmer
         run: wasmer deploy
         env:
