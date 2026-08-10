@@ -1,0 +1,6 @@
+kind: wasmer.io/App.v0
+name: lumi
+owner: candleflamegh
+package: wasmer/static-website
+cli_args:
+  - "--path=/opt/static_app"
