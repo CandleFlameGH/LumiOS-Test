@@ -1,9 +1,10 @@
-name: Build and Deploy to Wasmer
+name: Deploy to Wasmer
 
 on:
   push:
     branches:
-      - main  # change to master if your branch is master
+      - main
+      - master
 
 jobs:
   build-and-deploy:
@@ -16,6 +17,6 @@ jobs:
         uses: wasmerio/setup-wasmer@v1
 
       - name: Deploy to Wasmer
-        run: wasmer deploy --owner candleflamegh --app-name lumios-test
+        run: wasmer deploy
         env:
           WASMER_TOKEN: ${{ secrets.WASMER_TOKEN }}
