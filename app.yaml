@@ -1,6 +1,6 @@
-kind: wasmer.io/App.v0
-name: lumi
+kind: WasmerApp
+name: lumios-test
 owner: candleflamegh
-package: wasmer/static-website
+package: wasmer/static-site
 cli_args:
   - "--path=/opt/static_app"
